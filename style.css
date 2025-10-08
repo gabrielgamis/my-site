@@ -94,6 +94,7 @@ header a:hover {
 .gg-abrir-menu i{
     color: #2ffb00;
     font-size: 40px;
+    cursor: pointer;
 }
 
 .menu-mobile{
@@ -123,6 +124,7 @@ header a:hover {
 .menu-mobile .gg-fechar i{
     color: #2ffb00;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .menu-mobile nav ul{
@@ -273,7 +275,7 @@ section.sobre .flex {
     background-color: #2ffb00;
     font-size: 22px;
     cursor: pointer;
-    margin: 0 5px;
+    margin: 10px 0;
     transition: .2s;
 }
 
