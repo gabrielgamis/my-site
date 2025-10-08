@@ -72,7 +72,7 @@ header nav ul {
     list-style-type: none;
 }
 
-header nav ul li {
+header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
 }
@@ -87,6 +87,70 @@ header a {
 header a:hover {
     color: #fff;
     transform: scale(1.05);
+}
+
+/* ESTILO DO MENU MOBILE */
+
+.gg-abrir-menu i{
+    color: #2ffb00;
+    font-size: 40px;
+}
+
+.menu-mobile{
+    background-color: #000000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .gg-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .gg-fechar i{
+    color: #2ffb00;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #2ffb00;
+    color: #000;
+}
+
+.overlay-menu{
+    background-color: #0000008e;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
 }
 
 /* =========================================================
@@ -214,15 +278,15 @@ section.sobre .flex {
 }
 
 /* =========================================================
-   ESTILO DO PORTIFÓLIO
+   ESTILO DO PORTFÓLIO
 ========================================================= */
 
-section.portifolio {
+section.portfolio {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff2c;
 }
 
-section.portifolio .flex {
+section.portfolio .flex {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -407,19 +471,19 @@ footer .line-footer p a {
         width: 100%;
     }
 
-    /* PORTIFÓLIO */
-    section.portifolio{
+    /* PORTFÓLIO */
+    section.portfolio{
         padding: 80px 8%;
+    }
+
+    section.portfolio .flex {
+        gap: 60px;
     }
 
     .img-port {
         width: 100%;
         max-width: 360px;
         margin: 0 auto;
-    }
-
-    section.portifolio .flex {
-        gap: 60px;
     }
 
     /* RODAPÉ */

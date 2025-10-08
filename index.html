@@ -15,21 +15,21 @@
     <!-- CSS PRINCIPAL -->
     <link rel="stylesheet" href="style.css">
 
+    <script src="menu.js" defer></script>
+
     <title>Portfólio | Gabriel Gamis</title>
 </head>
 
 <body>
 
-    <!-- =========================================================
-         CABEÇALHO
-    ========================================================= -->
+    <!-- CABEÇALHO -->
     <header>
         <div class="interface">
             <div class="logo">
                 <a href="#">
                     <img src="imgs/logo.png" alt="Logo Gabriel Gamis">
                 </a>
-            </div><!-- logo -->
+            </div>
             
             <nav class="menu-desktop">
                 <ul>
@@ -44,13 +44,32 @@
                 <a href="#">
                     <button>Contato</button>
                 </a>
-            </div><!-- gg-contato -->
-        </div><!-- interface -->
+            </div>
+        
+            <div class="gg-abrir-menu" id="gg-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="gg-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+            
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div>
     </header>
 
-    <!-- =========================================================
-         CONTEÚDO PRINCIPAL
-    ========================================================= -->
+    <!-- CONTEÚDO PRINCIPAL -->
     <main>
 
         <!-- TOPO DO SITE -->
@@ -67,15 +86,15 @@
                             <a href="#">
                                 <button>Entre em contato</button>
                             </a>
-                        </div><!-- gg-contato -->
-                    </div><!-- txt-topo-do-site -->
+                        </div>
+                    </div>
                     
                     <div class="img-topo-site">
                         <img src="imgs/pessoa.png" alt="Imagem Gabriel Gamis">
-                    </div><!-- img-topo-site -->
-                </div><!-- flex -->
-            </div><!-- interface -->
-        </section><!-- topo-do-site -->
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- ESPECIALIDADES -->
         <section class="especialidades">
@@ -87,22 +106,22 @@
                         <i class="bi bi-code-square"></i>
                         <h3>Website</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac tortor sem. Praesent egestas elementum justo.</p>
-                    </div><!-- especialidades-box -->
+                    </div>
 
                     <div class="especialidades-box">
                         <i class="bi bi-cart"></i>
                         <h3>Loja Online</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac tortor sem. Praesent egestas elementum justo.</p>
-                    </div><!-- especialidades-box -->
+                    </div>
 
                     <div class="especialidades-box">
                         <i class="bi bi-wordpress"></i>
                         <h3>Blog</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac tortor sem. Praesent egestas elementum justo.</p>
-                    </div><!-- especialidades-box -->
-                </div><!-- flex -->
-            </div><!-- interface -->
-        </section><!-- especialidades -->
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- SOBRE -->
         <section class="sobre">
@@ -110,7 +129,7 @@
                 <div class="flex">
                     <div class="img-sobre">
                         <img src="imgs/foto.png" alt="Foto Gabriel Gamis">
-                    </div><!-- img-sobre -->
+                    </div>
 
                     <div class="txt-sobre">
                         <h2>MUITO PRAZER, <span>SOU GABRIEL GAMIS.</span></h2>
@@ -127,16 +146,16 @@
                             <a href="https://www.instagram.com/gabrielgamis/"><button><i class="bi bi-instagram"></i></button></a>
                             <a href="https://www.youtube.com/@Gamisplay"><button><i class="bi bi-youtube"></i></button></a>
                             <a href="https://www.linkedin.com/in/gabrielgamis/"><button><i class="bi bi-linkedin"></i></button></a>
-                        </div><!-- gabriel-social -->
-                    </div><!-- txt-sobre -->
-                </div><!-- flex -->
-            </div><!-- interface -->
-        </section><!-- sobre -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- PORTFÓLIO -->
-        <section class="portifolio">
+        <section class="portfolio">
             <div class="interface">
-                <h2 class="titulo">MEU <span>PORTIFÓLIO.</span></h2>
+                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
 
                 <div class="flex">
                     <div class="img-port" style="background-image: url(imgs/projeto.jpg);">
@@ -150,9 +169,9 @@
                     <div class="img-port" style="background-image: url(imgs/projeto.jpg);">
                         <div class="overlay">Projeto 3</div>
                     </div>
-                </div><!-- flex -->
-            </div><!-- interface -->
-        </section><!-- portifolio -->
+                </div>
+            </div>
+        </section>
 
         <!-- FORMULÁRIO -->
         <section class="formulario">
@@ -167,33 +186,33 @@
 
                     <div class="gg-enviar">
                         <input type="submit" value="ENVIAR">
-                    </div><!-- gg-enviar -->
+                    </div>
                 </form>
-            </div><!-- interface -->
-        </section><!-- formulario -->
+            </div>
+        </section>
 
     </main>
 
-<footer>
-    <div class="interface">
-        <div class="line-footer">
-            <div class="flex">
-                <div class="logo-footer">
-                    <img src="imgs/logo.png" alt="Logotipo Gabriel Gamis">
-                </div><!--logo-footer-->
-                <div class="gabriel-social">
-                    <a href="https://www.instagram.com/gabrielgamis/"><button><i class="bi bi-instagram"></i></button></a>
-                    <a href="https://www.youtube.com/@Gamisplay"><button><i class="bi bi-youtube"></i></button></a>
-                    <a href="https://www.linkedin.com/in/gabrielgamis/"><button><i class="bi bi-linkedin"></i></button></a>
-                </div><!-- gabriel-social -->            
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="imgs/logo.png" alt="Logotipo Gabriel Gamis">
+                    </div>
+                    <div class="gabriel-social">
+                        <a href="https://www.instagram.com/gabrielgamis/"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.youtube.com/@Gamisplay"><button><i class="bi bi-youtube"></i></button></a>
+                        <a href="https://www.linkedin.com/in/gabrielgamis/"><button><i class="bi bi-linkedin"></i></button></a>
+                    </div>            
+                </div>
             </div>
-        </div><!--line-footer-->
-        
-        <div class="line-footer borda">
-            <p><i class="bi bi-envelope-fill"></i> <a href="mailto:gabrielalmeidagamis@gmail.com">gabrielalmeidagamis@gmail.com</a></p>
-        </div><!--line-footer-->
-    </div><!--interface-->
-</footer>
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:gabrielalmeidagamis@gmail.com">gabrielalmeidagamis@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
